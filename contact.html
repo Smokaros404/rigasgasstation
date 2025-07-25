@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Πρατήριο Shell - Επικοινωνία</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fffbe6;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #ff0000 60%, #ffd700 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav {
+            background: #ffd700;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #d40000;
+        }
+        .container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(255, 215, 0, 0.15);
+            padding: 2rem;
+        }
+        h1, h2 {
+            color: #ff0000;
+        }
+        .contact-info {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .info-section {
+            flex: 1 1 220px;
+            background: #fffbe6;
+            border: 2px solid #ffd700;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 6px rgba(255,0,0,0.07);
+        }
+        .info-section h3 {
+            color: #d40000;
+            margin-bottom: 0.5rem;
+        }
+        form {
+            background: #fffbe6;
+            border: 2px solid #ffd700;
+            border-radius: 6px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 6px rgba(255,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            color: #d40000;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        input, textarea {
+            padding: 0.7rem;
+            border: 1px solid #ffd700;
+            border-radius: 4px;
+            font-size: 1rem;
+            background: #fff;
+            color: #222;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        button {
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #ffd700;
+            color: #d40000;
+        }
+        footer {
+            background: #ffd700;
+            color: #ff0000;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 1rem;
+            border-top: 2px solid #ff0000;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            nav { gap: 1rem; }
+            .contact-info { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Πρατήριο Shell</h1>
+        <p>Το κατάστημά σας για καύσιμα, λάστιχα, λάδια, εργαλεία και αξεσουάρ!</p>
+    </header>
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="findus.html">Πού θα μας βρείτε</a>
+        <a href="products.html">Προϊόντα</a>
+        <a href="contact.html">Επικοινωνία</a>
+    </nav>
+    <div class="container">
+        <h2>Επικοινωνήστε μαζί μας</h2>
+        <div class="contact-info">
+            <div class="info-section">
+                <h3>Διεύθυνση</h3>
+                <p>Σιγρι, Λεσβου ΤΚ 81103</p>
+            </div>
+            </div>
+            <div class="info-section">
+                <h3>Τηλέφωνο</h3>
+                <p>+30 2253 056001</p>
+            </div>
+            <div class="info-section">
+                <h3>Email</h3>
+                <p>info@shellrigas.com</p>
+            </div>
+    </div>
+    <footer>
+        &copy; 2025 Πρατήριο Shell. Όλα τα δικαιώματα διατηρούνται.
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('formMessage').style.display = 'block';
+            document.getElementById('formMessage').textContent = 'Σας ευχαριστούμε για την επικοινωνία! Θα σας απαντήσουμε σύντομα.';
+            this.reset();
+        });
+    </script>
+</body>
+</html>

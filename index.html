@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Shell Πρατήριο Καυσίμων - Αρχική</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fffbe6;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #ff0000 60%, #ffd700 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav {
+            background: #ffd700;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #d40000;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(255, 215, 0, 0.15);
+            padding: 2rem;
+        }
+        h1, h2 {
+            color: #ff0000;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .product-card {
+            background: #fffbe6;
+            border: 2px solid #ffd700;
+            border-radius: 6px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 1px 6px rgba(255,0,0,0.07);
+        }
+        .product-card h3 {
+            color: #d40000;
+            margin-bottom: 0.5rem;
+        }
+        .product-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #ffd700;
+            color: #ff0000;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 1rem;
+            border-top: 2px solid #ff0000;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            nav { gap: 1rem; }
+            .products { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shell Πρατήριο Καυσίμων</h1>
+        <p>Το κατάστημά σας για καύσιμα, ελαστικά, λάδια, εργαλεία και αξεσουάρ!</p>
+    </header>
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="findus.html">Βρείτε μας</a>
+        <a href="products.html">Προϊόντα</a>
+        <a href="contact.html">Επικοινωνία</a>
+    </nav>
+    <div class="container">
+        <h2>Καλώς ήρθατε στο Shell Πρατήριο Καυσίμων</h2>
+        <p>
+            Προσφέρουμε κορυφαία καύσιμα, ελαστικά υψηλής ποιότητας, λάδια, εργαλεία, αξεσουάρ αυτοκινήτου και πολλά άλλα. Επισκεφθείτε μας για άριστη εξυπηρέτηση και προϊόντα που κρατούν το όχημά σας σε άριστη κατάσταση.
+        </p>
+        <div class="products">
+            <div class="product-card">
+                <img src="oil canister.png" alt="Ελαστικά">
+                <h3>Ελαστικά</h3>
+                <p>Ελαστικά παντός καιρού, επιδόσεων και εκτός δρόμου για κάθε όχημα.</p>
+            </div>
+            <div class="product-card">
+                <img src="image.png" alt="Λάδια">
+                <h3>Λάδια</h3>
+                <p>Λάδια κινητήρα, υγρά μετάδοσης και λιπαντικά.</p>
+            </div>
+            <div class="product-card">
+                <img src="toolbox.png" alt="Εργαλεία">
+                <h3>Εργαλεία</h3>
+                <p>Απαραίτητα εργαλεία για συντήρηση και επισκευές αυτοκινήτου.</p>
+            </div>
+            <div class="product-card">
+                <img src="accesories.png" alt="Αξεσουάρ">
+                <h3>Αξεσουάρ</h3>
+                <p>Πατάκια, καλύμματα καθισμάτων, αρωματικά και άλλα.</p>
+            </div>
+            <div class="product-card">
+                <img src="petrol.png" alt="Καύσιμα">
+                <h3>Καύσιμα</h3>
+                <p>Ποιοτικά καύσιμα Shell για κάθε τύπο κινητήρα.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Shell Πρατήριο Καυσίμων. Όλα τα δικαιώματα διατηρούνται.
+    </footer>
+</body>
+</html>

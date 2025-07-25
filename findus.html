@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+</div><html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Shell Πρατήριο Καυσίμων - Βρείτε μας</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fffbe6;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #ff0000 60%, #ffd700 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav {
+            background: #ffd700;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #d40000;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(255, 215, 0, 0.15);
+            padding: 2rem;
+        }
+        h1, h2 {
+            color: #ff0000;
+        }
+        .map {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .map iframe {
+            border: 3px solid #ffd700;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            box-shadow: 0 2px 12px rgba(255,0,0,0.07);
+        }
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .info-section {
+            flex: 1 1 250px;
+            background: #fffbe6;
+            border: 2px solid #ffd700;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 6px rgba(255,0,0,0.07);
+        }
+        .info-section h3 {
+            color: #d40000;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #ffd700;
+            color: #ff0000;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 1rem;
+            border-top: 2px solid #ff0000;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            nav { gap: 1rem; }
+            .info { flex-direction: column; gap: 1rem; }
+            .map iframe { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shell Πρατήριο Καυσίμων</h1>
+        <p>Το κατάστημά σας για καύσιμα, λάστιχα, λάδια, εργαλεία και αξεσουάρ!</p>
+    </header>
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="findus.html">Βρείτε μας</a>
+        <a href="products.html">Προϊόντα</a>
+        <a href="contact.html">Επικοινωνία</a>
+    </nav>
+    <div class="container">
+        <h2>Βρείτε μας</h2>
+        <div class="map">
+            <!-- Αντικαταστήστε το src URL με την πραγματική σας τοποθεσία αν χρειάζεται -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5507.610057407613!2d25.86367501523811!3d39.21921629532692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bac78544a7101f%3A0x69947b9f1c8dd279!2sShell!5e0!3m2!1sel!2sgr!4v1753404564062!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info">
+            <div class="info-section">
+                <h3>Διεύθυνση</h3>
+                <p>Σιγρι, Λεσβου ΤΚ 81103</p>
+            </div>
+            <div class="info-section">
+                <h3>Ώρες Λειτουργίας</h3>
+                <p>
+                Δευτέρα	07:00 - 22:00
+                Τρίτη	07:00 - 22:00
+                Τετάρτη	07:00 - 22:00
+                Πέμπτη	07:00 - 22:00
+                Παρασκευή Κλειστό
+                Σάββατο	07:00 - 22:00
+                Κυριακή	07:00 - 22:00
+                </p>
+            </div>
+            <div class="info-section">
+                <h3>Επικοινωνία</h3>
+                <p>
+                    Τηλέφωνο: +30 2253 056001<br>
+                    Email: info@shellrigas.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Shell Πρατήριο Καυσίμων. Όλα τα δικαιώματα διατηρούνται.
+    </footer>
+</body>
+</html>
